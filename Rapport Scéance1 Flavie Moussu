@@ -1,0 +1,12 @@
+Nous avons commencé par chercher quel detcteur de couleur nous pourrions utlisier. 
+Nous avons trouvé deux detecteurs potentiels : le capteur TCS230 Arduino et le capteur TCS34725 RGB sensor, que nous avons déjà utiliser en classe.
+Au prochain cours, nous testerons les deux capteurs sur les wagons pour voir celui qui différentie le mieux les couleurs.
+Nous mettrons un rideau en tissu noir autour pour diminuer la lumière ambiante et ainsi ne pas influencer les mesures.
+
+J'ai ensuite chercher comment créer un tapis roulant. Nous allons utliser deux step motor 28BYJ-48.
+Nous allons créer deux rouleaux en bois que nous accrocherons aux moteurs. Nous les ferons tourner à la même vitesste.
+Nous mettrons un tapis entre les deux. Il faut que ce tapis soit d'une couleur claire pour ne pas influencer le detecteur de couleur.
+
+Pour les portes, nous utiliserons un ou deux cerveaux moteurs : le micro-servo 9G SG90.
+Nous les ferons pivoter à un certains angles selon la couleur detecter.
+Nous allons vissé un bout de bois sur le palonnier pour le rallonger et pour qu'ils puissent ainsi bloqué les wagons, qui seront donc obligé d'aller dans la boite de leurs couleurs respectives.
