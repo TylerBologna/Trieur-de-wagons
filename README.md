@@ -3,21 +3,25 @@ Cahier des charges:
   Ce projet a pour but de trier par couleur et de comter les jetons du jeu "Les aventuriers du rail". Ces jetons sont des wagons.
   
   -systeme pour detecter la couleur du wagon
-  -systeme pour déplacer les wagons (tapis roulant?)
+  -systeme pour déplacer les wagons (tapis roulant? blanc)
   -systeme pour changer la trajectoir du wagon en fonction de sa couleur (portes?)
   -systeme pour aligner les wagons depuis un tas de wagons 
   -systeme pour compter les wagons (compter les changements de trajectoir ou le nb de portes ouvertes)
   -Gare ou endroit dans lequel on mettra ces systeme 
-  -le Bluetooth pour démarer le programme 
+  -le Bluetooth pour démarer le programme
   -
   
   
   
 programme :
  Scéance 1:
- penser a acheter le pus tot possible afin de pouvoir construir le plus rapidement possible... regarder ce qu'il reste a faire et quand
+ penser a acheter recuperer le pus tot possible afin de pouvoir construir le plus rapidement possible... regarder ce qu'il reste a faire et quand
  -systeme pour déplacer les wagons (tapis roulant?)
  -Gare ou endroit dans lequel on mettra ces systeme 
+ -capteur de couleur
+ -portes
+ -tapis roulant
+ -
  
  
  Scéance 2:
@@ -42,4 +46,35 @@ programme :
  
  Scéance 8:
  terminer 
+ 
+ RAPPORT:
+ 
+  Le capteur de couleurs TCS230 Arduino
+  https://howtomechatronics.com/tutorials/arduino/arduino-color-sensing-tutorial-tcs230-tcs3200-color-sensor/
+  
+  https://arduino-france.site/capteur-couleur/
+  dans ces liens ya du code et des explication
+  
+  reflexion sur les composants et choses electronique que l'on va utilisé pour le projet 
+  
+  cerveaumoteur pour guider es wagons 
+  
+  
+  
+  tapis roulant 
+  on utilise le moteur 
+  step motor 28byj-48
+  
+  
+  
+  
+    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
   
