@@ -1,0 +1,99 @@
+Code pour le moteur pour le tapis roulant 
+
+
+
+/* Example sketch to control a 28BYJ-48 stepper motor with ULN2003 driver board and Arduino UNO. More info: https://www.makerguides.com */
+// Include the Arduino Stepper.h library:
+#include <Stepper.h>
+// Define number of steps per rotation:
+const int stepsPerRevolution = 2048;
+// Wiring:
+// Pin 8 to IN1 on the ULN2003 driver
+// Pin 9 to IN2 on the ULN2003 driver
+// Pin 10 to IN3 on the ULN2003 driver
+// Pin 11 to IN4 on the ULN2003 driver
+// Create stepper object called 'myStepper', note the pin order:
+Stepper myStepper = Stepper(stepsPerRevolution, 8, 10, 9, 11);
+void setup() {
+  // Set the speed to 5 rpm:
+  myStepper.setSpeed(12);
+  
+  // Begin Serial communication at a baud rate of 9600:
+  Serial.begin(9600);
+}
+void loop() {
+  // Step one revolution in one direction:
+  Serial.println("clockwise");
+  myStepper.step(stepsPerRevolution);
+  delay(500);
+  
+  // Step one revolution in the other direction:
+  Serial.println("counterclockwise");
+  myStepper.step(-stepsPerRevolution);
+  delay(500);
+}
+
+
+
+code pour le servomoteur 
+
+/* Sweep
+ by BARRAGAN <http://barraganstudio.com>
+ This example code is in the public domain.
+
+ modified 8 Nov 2013
+ by Scott Fitzgerald
+ https://www.arduino.cc/en/Tutorial/LibraryExamples/Sweep
+*/
+
+#include <Servo.h>
+
+Servo myservo;  // create servo object to control a servo
+// twelve servo objects can be created on most boards
+
+int pos = 0;    // variable to store the servo position
+
+void setup() {
+  myservo.attach(8);  // attaches the servo on pin 9 to the servo object
+}
+
+void loop() {
+  for (pos = 0; pos <= 180; pos += 1) { // goes from 0 degrees to 180 degrees
+    // in steps of 1 degree
+    myservo.write(pos);              // tell servo to go to position in variable 'pos'
+    delay(15);                       // waits 15 ms for the servo to reach the position
+  }
+  for (pos = 180; pos >= 0; pos -= 1) { // goes from 180 degrees to 0 degrees
+    myservo.write(pos);              // tell servo to go to position in variable 'pos'
+    delay(15);                       // waits 15 ms for the servo to reach the position
+  }
+}
+
+
+ou bien
+
+
+
+#include <Servo.h>
+
+Servo servo;
+
+void setup() {
+  // put your setup code here, to run once:
+  servo.attach(8);
+  Serial.begin(9600);
+  servo.write(0);
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  delay(2000);
+  Serial.println("est ce que ca marche?");
+  servo.write(90);
+  delay(2000);
+  servo.write(0);
+  
+
+}
+
