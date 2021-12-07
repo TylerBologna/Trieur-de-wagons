@@ -16,4 +16,5 @@ servo.write("angle en degres"); sert a faire tourner le servomoteur d'un angle d
 28BYJ-48:
 setSpeed(12); permet de changer la vitesse de rotation du moter 
 
-photos des branchements 
+photos des branchements: (ce sont des photos prises dans ma chambre et non en cours car je n'ai pas pensé à prendre ces photos durant le cours mais j'avais bien fait les montages pendant la scéance.) 
+jointes dans la dossier 
