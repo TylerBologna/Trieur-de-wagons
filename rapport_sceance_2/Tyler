@@ -1,10 +1,26 @@
 durant cette scéance j'ai fait fonctionner le detecteur de couleur tcs34725.
 photos du programme et du montage dans github... (cette fois ci elles y sont !)
 
-j'ai repris le programme que l'on avait étudié en cours. j'ai ensuite testé sur les wagons pour voir si cela fonctionné 
-photos aussi...
+j'ai repris le programme que l'on avait étudié en cours. j'ai ensuite essayer de mettre des wagons sous le capteur et j'ai bien observé que le programme fonctionnait. et renvoyait plus 
+de rouge que de vert et de bleu
+par contre a chaque fois que je veux tester le programme l'IA doit refaire 4000 tests pour fonctionner. je dois retrouver comment rentrer les résultats des tests dans le programme afin 
+que je puisse faire fonctionner le capteur directement.
 
-NE PAS OUBLIER QU4IL FAUT QUALIBRER SUR LA BLANC PUIS SUR LE NOIR.
+NE PAS OUBLIER QU'IL FAUT QUALIBRER SUR LE BLANC PUIS SUR LE NOIR.
+
+par la suite, avec Flavie nous avons réfléchis a quelle materiaux utliser pour fabriquer le tapis roulant. Nous aimerions le faire en film plastique ou bien en sac poubelle épaix.
+
+enfin j'ai éssayé de combiner le programme du capteur de couleur tcs et du servomoteur. (photo)
+certaines choses ont fonctionnait mais je n'ai pas réussi à faire ce que je voulais pour le moment.
+ce qui marche :
+les deux biblioteques semblent etre compatibles et j'ai réussi a faire tourner le servomoteur lorsque le capteur tcs reçoit une couleur rouge.(il renvoit wagon rouge sur le terminal en même temps)(photo)
+les soucis:
+le soucis est que le capteur tcs continue de scanner meme une fois que le servomoteur a tourné et donc il recapte une couleur rouge et donc le servomoteur tourne de nouveau.
+un autre soucis est que le wagon est assez petit donc il doit etre dans un angle particulier pour que le capteur percoive bien le rouge.
+
+
+
+
 
 
 
