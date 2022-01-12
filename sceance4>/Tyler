@@ -1,0 +1,12 @@
+durant cette scéance j'ai mis en place les programmes et fait les montages nécessaires pour passer a l'oral.
+en dehors de ce temps je suis retourné faire des tests sur le programme "capteur de couleur + servomoteur" en effet j'avais en plus le sac poubelle pour pouvoir faire des tests
+sur la reconnaissance de la couleur des wagons. la couleur sombre du sac permet de ne recevoir dans le capteur quasiment que la couleur du wagon, ce qui est un plus.
+de base de pensais que j'allais devoir dire a mon arduino "si il y'a entre 20 et 40 en rouge et moins de 15 en bleu et vert". le soucis c'est que parfois le capteur capte bien
+et parfois moins et les valeurs ne montent pas toujours a la meme hauteur. donc je vais avoir besoin d'utiliser un rapport entre les couleurs afin de determiner la couleur des 
+wagons. Un défi est que appart le wagon rouge les wagons ne sont pas constitué uniquement d'une couleur primaire, même les sois disant wagon bleue et vert. Mais le capteur 
+voit quand même la différence entre la couleur des wagons.
+
+j'ai éssayé de combiner le programme "tcs + servo" avec le programme du moteur pour faire le tapis roulant. mon soucis est que le programme du tcs était grandement ralentit.
+Je n'ai pas réussi à faire dire auprogramme de faire tourner le moteur ET de capter les couleurs. il ne fait qu'un a la fois donc le moteur s'arette tout le temps et le capteur est 
+lent. Pour le moment je décide de prendre une deuxieme carte arduino pour le moteur. peut etre que je reviendrai sur le choix car mon probleme est peut etre due aux "delay" dans 
+les programmes et je peux peut etre arranger ça avec des milis().
