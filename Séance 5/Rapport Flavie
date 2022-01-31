@@ -1,0 +1,11 @@
+Durant cette séance, j'ai fini de dessiner les pièces nécessaires pour le tapis roulant sur FreeCad. 
+J'ai ensuite exporter les fichiers sous format STL et nous l'avons envoyé pour l'impression 3D.
+Après ça, j'ai réflechit à comment poser les jetons un par un sur le tapis roulant. 
+Il faut que les jetons soient à une certaine distance l'un de l'autre pour que le trieur de couleur ne bloque pas les jetons.
+Nous pensions donc commencer par poser les wagons dans un tunnel qui sera incliné pour faire les faire tomber grâce à la gravité.
+En bas du tunnel, nous mettrons une pièce en forme de disque, accrochée à un cervo moteur. Nous ferons une encoche dans cette pièce de la taille du wagon.
+Ainsi, la première pièce du tunnel va tomber dans l'encoche du disque.
+On fera alors tourner le disque de 180 degrés. 
+En dessous de ce premier disque, nous mettrons un 2éme disque beaucoup plus fin, avec un trou de la taille du wagon à l'opposé du tunnel.
+Finalement, quand le 1er disque tounera avec le wagon de 180 degrés, le wagon tombera par le trou du 2èeme disque sur le tapis roulant.
+Il faudra régler le cervo-moteur pour séparer les wagons de la bonne distance.
