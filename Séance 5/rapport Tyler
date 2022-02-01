@@ -1,0 +1,7 @@
+Durant cette scéance j'ai voulu revoir comment fonctionne le module bluetooth pour pouvoir l'integrer au projet. J'ai donc essayé de faire fonctionner une LED grace à mon téléphone
+après beaucoup de tentative avec le programme vu en cours, des cours et vidéos sur internet je ne suis pas parvenu à allumer la led... (ce qui est un peu ridicule mais j'ai vraiment 
+essayé) (photo d'un des montage dans le rapport)
+je faisais des erreurs simples sans m'en rendre compte comme passer une heure à essayer de téléverser sans y arriver, pensant que le probleme venait du code alors qu'il venait du
+faite que j'étais en mode "arduino nano" au lieu de "uno"...
+Scéance pas du tout productive.
+
