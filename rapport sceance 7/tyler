@@ -12,3 +12,32 @@ j'ai bien vérifié plusieurs fois. Le branchement est correcte, le code est cor
 soit le servomoteur ne bouge pas et fait des petits "tic tic tic" quand il est sensé bouger.
 soit il marche quand je lui envois un ordre mais il ne tourne pas du bon degres et ils s'arrette de fonctionner au bouts de quelques ordres...
 par ailleurs mes différents servomoteurs ne réagissent pas de la même maniere a mon code.
+
+voici le code exemple:
+
+#include <Servo.h>
+
+static const int servoPin = 13;
+
+Servo servo1;
+
+void setup() {
+    Serial.begin(115200);
+    servo1.attach(servoPin);
+}
+
+void loop() {
+    for(int posDegrees = 0; posDegrees <= 180; posDegrees++) {
+        servo1.write(posDegrees);
+        Serial.println(posDegrees);
+        delay(20);
+    }
+
+    for(int posDegrees = 180; posDegrees >= 0; posDegrees--) {
+        servo1.write(posDegrees);
+        Serial.println(posDegrees);
+        delay(20);
+    }
+}
+
+j'ai aussi éssayé de changer les delay qui sont assez courts pour les mettre a 2 ou 3 secondes en augmentnat plus les angles ... mais encore la tout semble marcher sauf que les servomoteurs ne tournent pas.
