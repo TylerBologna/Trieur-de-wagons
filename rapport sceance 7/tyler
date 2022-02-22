@@ -1,2 +1,14 @@
-durant ctte scéance j'ai compris pourquoi les ervomoteurs ne marchent pas...
+durant ctte scéance j'ai compris pourquoi les servomoteurs ne marchent pas...
 en effet les servomoteurs ne fonctionnent pas normalement quand il y'a le module bluetooth dans le programm.
+j'ai essayé de quand meme les faire fonctionner ensemble comme j'ai vu que c'était possible dans les projets d'autres personnes notament en changeant les mes pin sur les 0 et 1.. les servomoteurs e marchaient toujours pas.
+j'ai essayé de demander de l'aide toutes les tantatives avec les personnes qui m'ont aidé n'ont pas fonctionné.
+finalement on m'a donné une nouvelle carte esp32 qui apparemment marche mieux pour combiner le bluetooth avec les ervomoteurs.
+Le bluetooth marche, j'arrive me connecter, j'arrive a coordonner le terminal du bluetooth avec le terminals série de l'ordinateur!
+j'ai passé plusieurs heures chez moi a éssayer de faire fonctionner un servomoteur seul avec cette nouvelle carte ... 
+ça n'a pas fonctionné. (quelle surprise)
+j'ai trouvé un programme d'exemlpe pour les servomoteurs qui ne marche pas.
+les exemples sur internet utilise aussi ce code.
+j'ai bien vérifié plusieurs fois. Le branchement est correcte, le code est correcte.
+soit le servomoteur ne bouge pas et fait des petits "tic tic tic" quand il est sensé bouger.
+soit il marche quand je lui envois un ordre mais il ne tourne pas du bon degres et ils s'arrette de fonctionner au bouts de quelques ordres...
+par ailleurs mes différents servomoteurs ne réagissent pas de la même maniere a mon code.
