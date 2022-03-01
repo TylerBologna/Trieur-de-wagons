@@ -1,0 +1,17 @@
+ça y est, j'ai enfn réglé mon problème de bluetooth et de servomoteur 
+j'ai un programme qui s'active par blutooth, capte les couleurs et en fonction des couleurs, fait bouger le servomoteur.
+je suis revenu sur arduino, j'ai un peu bidouillé mon encien programme et tout fonctionne. Il me reste à trouver des valeurs de RGB pour savoir quand j'ai un wagon bleu jaune ou vert sous le
+capteur et décider de quel angle doit tourner le servomoteur en fonction.
+J'ai aussi créé un programme qui lie un bluetooth avec un stepmotor...
+je vais etre obligé d'avoir 2 cartes arduino une pour le triage des jetons et l'autre pour le tapis roulant car le step motor ralenti tout le programme de triage si les combine...
+il me faut aussi une pièce à mettre sur le servomoteur!
+Flavie s'occupe de la partie méchanique de tapis roulant.
+
+
+on utilisera 2 téléphone pour faire marher le projet. pourquoi? 
+alors comment dire... depuis 5 scéance je prends du mal a faire marcher quelque chose et je viens de me rendre compte que en faite j'an avais pas besoin...
+j'aurai pu juste mettre le programme avec le stepmotor et le bluetooth. Et faire un autre programme avec le capteur de couleur et les servomoteurs sans bluetooth qui marcherait tout le temps.
+Le trie commencerait qu'une fois le step motor activé.
+Mais maintenant que j'arrive a faire marcher les servomoteurs en bluetooth, je veux utiliser ce programme parce que je l'aime. Mais je veux aussi faire marcher le tapis le tapis roulant par 
+bluetooth parce que je trouve ça plus satisfaisant car on voit une réelle différance lorsque l'on appuie sur "on" sur le téléphone. on a donc besoin de 2 téléphone.
+Voilà pour la partie plus subjective...
