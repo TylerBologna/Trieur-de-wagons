@@ -1,9 +1,10 @@
 ça y est, j'ai enfn réglé mon problème de bluetooth et de servomoteur 
 j'ai un programme qui s'active par blutooth, capte les couleurs et en fonction des couleurs, fait bouger le servomoteur.
-je suis revenu sur arduino, j'ai un peu bidouillé mon encien programme et tout fonctionne. Il me reste à trouver des valeurs de RGB pour savoir quand j'ai un wagon bleu jaune ou vert sous le
-capteur et décider de quel angle doit tourner le servomoteur en fonction.
+je suis revenu sur arduino, j'ai un peu bidouillé mon encien programme et tout fonctionne.Les servomoteurs on besoin de plus de puissance donc j'ai pris un cable que je branche a une prise via un
+petit boitier afin d'éviter mon probleme de "tic tic tic" des servomoteurs. J'ai du enlever tous les serial de mon programme et remplacer tous les blue par serial. Quel plaisir!
+Il me reste à trouver des valeurs de RGB pour savoir quand j'ai un wagon bleu jaune ou vert sous le capteur et décider de quel angle doit tourner le servomoteur en fonction.
 J'ai aussi créé un programme qui lie un bluetooth avec un stepmotor...
-je vais etre obligé d'avoir 2 cartes arduino une pour le triage des jetons et l'autre pour le tapis roulant car le step motor ralenti tout le programme de triage si les combine...
+je vais etre obligé d'avoir 2 cartes arduino une pour le triage des jetons et l'autre pour le tapis roulant car le step motor ralenti tout le programme de triage si je les combine...
 il me faut aussi une pièce à mettre sur le servomoteur!
 Flavie s'occupe de la partie méchanique de tapis roulant.
 
