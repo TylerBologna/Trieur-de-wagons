@@ -34,11 +34,22 @@ J'ai du donc faire ces mesures surun programme qui n'utilise pas le bluetooth. i
 Le tapis roulant
 
   il a fallut moultes étapes pour réaliser ce tapis.
-  premierement choisir une matiere : Le sac poubelle. c'est noir donc ca facilite la detection des couleurs et ca s'étire un peu pour pouvoir garder le tapis tendu. et ca tient sur quelque chose qui tourne.
-  comment avons nous fait ce "quelquechose qui tourne" ?
+  premierement choisir une matiere : Le sac poubelle. c'est noir donc ca facilite la detection des couleurs et ca s'étire un peu pour pouvoir garder le tapis tendu. et ca tient sur quelque 
+  chose qui tourne. comment avons nous fait ce "quelquechose qui tourne" ?
+  
   Le stepmotor
-    le step motor possede aussi un fonctionnement assez simple. il possede une librairie Stepper.h et fonctionne grace a la commande stepper.step().
-    
+    le step motor possede aussi un fonctionnement assez simple. il possede une librairie Stepper.h et fonctionne grace a la commande stepper.step(). Un soucis avec le moteur est qu'il 
+    nécécite de lui ordonner de bouger en continue sinon il s'arette. Donc lorsqu'il est dans le meme programme que le reste du projet, il ralentit le reste de facon considérable. On a donc 
+    décidé de faire marcher le moteur sur une autre carte. Il a fallut donc aussi le meler a un HC-05 pour le bluetooth ce qui a tres bien marché
+  
+ l'objectif était d'attacher un sac poubelle entre le moteur et une autre attache qui pourrait glisser pour bien tendre le sac et que la rotation du moteur entraine la rotaion de tous le sac.
+ pour cela il a fallut creer plusiers pieces que nous avons imprimé avec l'imprimente 3D. on a assemblé le tout sur une plaque de bois 
+ 
+ 
+ L'assemblage:
+ pour l'assemblage nous avions 2 bredboard: une pour le capteur et le servomoteur et une autre pour le moteur. nous les avons skotché sur la planche a coté du ta^pis roulant. nous avons du 
+ faire un support pour que le servomoteur soit a la hauteur des wagons sur le tapis. il fallait aussi un systeme pour accrocher le capteur de couleur au dessus du tapis roulant.
+ à la fin le projet ressemble a ceci:
     
     
     
