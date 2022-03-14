@@ -1,0 +1,47 @@
+Cahier des charges: Ce projet a pour but de trier par couleur et de comter les jetons du jeu "Les aventuriers du rail". Ces jetons sont des wagons.
+L'objectif princcipale du projet a été réalisé dans le sens ou le projet trie les wagons par couleurs. Toutefois il ne vas pas aussi loin que ce que nous avions envisagé en début de projet
+en effet le systeme est assez lent. Il nous faudrai une petite heure pour trier tous les wagons de jeux... de plus le projet ne compte pas les wagons.
+
+quoi qu'il en soit nous avons quand meme réussi a creer un systeme interessant.Le projet s'est décomposé en moultes étapes et ces étapes n'ont pas du tout était dans le meme ordre que prévu
+initialement. En partie parce que nous savions que nous n'allons pas respecter ce programme mais aussi car nos idées ne sont pas venu dans l'odre prévu.
+Globalement le projet a nécéssité de faire fonctionner un tapis roulant pour faire avancer les jetons sous un capteur de couleur. Ce dernier doit envoyer des informations a la carte arduino et en
+fonction de ces informations, La carte fait bouger un servomoteur pour diriger les wagons qui tombes dans leur emplacement désigné. Le projet doit etre connecté donc tout cela doit démarrer par 
+bluetooth.
+
+Les servomoteurs.
+  ils fonctionnent très simplement grace a une bibliotheque servo.h et la commande servo.write() pour les faire bouger.
+
+Le capteur de couleur.
+  il s'agit d'un tcs 34725. il fonctionne aussi assez simplement
+
+initialement il a fallut faire marcher les servomoteurs seules puis avec le capteur de couleur. grace a un peu de code on a rapidement était capable de creer un systeme qui faisait bouger le 
+servomoteur si le capteur de couleur captais un wagon rouge.
+
+Le module Bluetooth.
+  nous avons utilisé un module HC-05
+  
+  toutefois dès lors que le bluetooth est entré en jeux beaucoup de problemes sont apparu. Parfois le servomoteur n'avait pas assez de
+courant et donc faisait un petit "tic tic tic" quand il devait bouger, mais ne bougeaitpas. ensuite le bluetooth utilise une librairie pas compatible avec celle des servomoteurs ce qui m'a 
+pris du temps a comprendre et qui a été long a résoudre. on a éssayé d'utiliser une carte esp32 qui est sois disant plus pratique pour ce genre de probleme... Pas pour nous. Donc nous somme revenue
+sur arduino. En branchant la carte 
+arduino sur une allimentation et en enlevant la partie du code qui generait des erreurs(celle qui utilisait softwareserial + tous les serial.quelquechose), nous somme parvenus a faire marcher les 3
+ensembles. (c'est a dire que je pouvais démarrer mon programme par
+bluetooth et faire tourner le servomoteur lorsque le cpateur de couleur detecte un wagon rouge. Seule probleme je ne pouvais plus utiliser le terminal série et il me restait des de l'analyse de 
+donner a faire comme savoir de quelle angle doivent tourner les servomoteur en fonction des differents wagons et pour quelles combinaison de "rouge vert bleu" doit on considéré qu'il ya un wagon 
+rouge vert jaune ou bleu.
+J'ai du donc faire ces mesures surun programme qui n'utilise pas le bluetooth. il a fallut creer le tapis roulant avant de pouvoir connetre les angles pour le servomoteur 
+
+Le tapis roulant
+
+  il a fallut moultes étapes pour réaliser ce tapis.
+  premierement choisir une matiere : Le sac poubelle. c'est noir donc ca facilite la detection des couleurs et ca s'étire un peu pour pouvoir garder le tapis tendu. et ca tient sur quelque chose qui tourne.
+  comment avons nous fait ce "quelquechose qui tourne" ?
+  Le stepmotor
+    le step motor possede aussi un fonctionnement assez simple. il possede une librairie Stepper.h et fonctionne grace a la commande stepper.step().
+    
+    
+    
+    
+    
+    
+
